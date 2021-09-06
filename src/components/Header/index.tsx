@@ -2,11 +2,12 @@ import React from 'react';
 import { 
     Container,
     ImgLogo,
-    NavBar,
     DescriptionInfo,
 } from './styles';
 
 import logo from '../../assets/images/logo.svg'
+
+import DesktopMenu from '../DesktopMenu'
 
 const Header:React.FC = () => {
     return (
@@ -15,28 +16,13 @@ const Header:React.FC = () => {
                 src={logo}
                 alt="logo"
             />
-
-            <NavBar>
-                <nav>
-                    <ul>
-                        <li>
-                            About
-                        </li>
-                        <li>
-                            Careers
-                        </li>
-                        <li>
-                            Events
-                        </li>
-                        <li>
-                            Products
-                        </li>
-                        <li>
-                            Support
-                        </li>
-                    </ul>
-                </nav>
-            </NavBar>
+            
+            <DesktopMenu 
+                top={10}
+                left={0}
+                right={169}
+                marginTop={0}
+            />
 
             <DescriptionInfo>
                 <h1>

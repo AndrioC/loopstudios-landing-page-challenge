@@ -31,10 +31,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar {
-        width: 3px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 3px;
+        width: 0px;
     }
 `;

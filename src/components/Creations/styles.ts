@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     width: 1114px;
+    margin-bottom: 186px;
 `;
 
 
