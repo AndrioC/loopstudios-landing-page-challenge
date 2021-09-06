@@ -13,6 +13,8 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 160px;
+    margin-bottom: 180px;
+    width: 1114px;
 `;
 
 
@@ -21,7 +23,7 @@ export const Info = styled.div`
     height: 318px;
     background: var(--white);
     margin-left: -159px;
-    margin-top: 180px;
+    margin-top: 181px;
     display: flex;
     flex-direction: column;
     align-items: center;
