@@ -15,6 +15,11 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: var(--background);
+        height: 100%;
+    }
+
+    html {
+        position: relative;
     }
 
     body, input, textarea, button {

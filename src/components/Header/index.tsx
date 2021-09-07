@@ -8,6 +8,7 @@ import {
 import logo from '../../assets/images/logo.svg'
 
 import DesktopMenu from '../DesktopMenu'
+import MobileMenu from '../MobileMenu'
 
 const Header:React.FC = () => {
     return (
@@ -17,12 +18,18 @@ const Header:React.FC = () => {
                 alt="logo"
             />
             
-            <DesktopMenu 
-                top={10}
-                left={0}
-                right={169}
-                marginTop={0}
-            />
+            <div className="desktop-menu">
+                <DesktopMenu 
+                    top={10}
+                    left={0}
+                    right={169}
+                    marginTop={0}
+                />
+            </div>
+
+            <div className="mobile-menu">
+                <MobileMenu />
+            </div>
 
             <DescriptionInfo>
                 <h1>

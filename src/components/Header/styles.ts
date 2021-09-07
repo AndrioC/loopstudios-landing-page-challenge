@@ -7,6 +7,19 @@ export const Container = styled.header`
     background: url(${backgroundHero}) no-repeat;
     background-position: center 0%;
     background-size: 100%;
+    .mobile-menu{
+        display: none;
+    }
+
+    @media(max-width: 900px){
+        .mobile-menu{
+            display: block;
+        }
+
+        .desktop-menu{
+            display: none;
+        }
+    }
 `;
 
 export const ImgLogo = styled.img`
