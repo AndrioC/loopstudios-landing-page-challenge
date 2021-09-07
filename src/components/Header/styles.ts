@@ -11,6 +11,10 @@ export const Container = styled.header`
         display: none;
     }
 
+    .desktop-menu{
+        display: block;
+    }
+
     @media(max-width: 900px){
         .mobile-menu{
             display: block;

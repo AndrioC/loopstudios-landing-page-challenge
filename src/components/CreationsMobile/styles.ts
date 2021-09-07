@@ -14,23 +14,6 @@ export const Wrapper = styled.div`
     flex-direction: column;
     width: 1114px;
     margin-bottom: 186px;
-`;
-
-
-
-export const Header = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 81px;
-
-    h1 {
-        text-transform: uppercase;
-        font-family: "Josefin Sans";
-        font-weight: 300;
-        font-style: normal;
-    }
 
     button {
         background: var(--white);
@@ -49,6 +32,23 @@ export const Header = styled.div`
             color: var(--white);
             border: none;
         }
+    }
+`;
+
+
+
+export const Header = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 81px;
+
+    h1 {
+        text-transform: uppercase;
+        font-family: "Josefin Sans";
+        font-weight: 300;
+        font-style: normal;
     }
 
     @media(max-width: 900px){
@@ -76,9 +76,8 @@ export const WrapperCreations = styled.div`
             display: inline-block;
         }
     }
-    @media(max-width: 900px){
-        flex-wrap: nowrap;
 
+    @media(max-width: 900px){
         ul {
             display: flex;
             flex-direction: column;
@@ -92,8 +91,8 @@ export const WrapperContainer = styled.div`
 
     span {
         position: absolute;
-        left: 40px;
-        top: 356px;
+        left: 21px;
+        top: 60px;
         font-size: 30px;
         font-family: "Josefin Sans";
         text-transform: uppercase;
@@ -115,9 +114,8 @@ export const WrapperContainer = styled.div`
     }
 
     @media(max-width: 900px){
-        img {
-        width: 100%;
-        height: 120px;
+        img{
+            width: 390px;
         }
     }
 `;

@@ -1,6 +1,22 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background: #000;
-    height: 100%;
+
+    .creations-desktop{
+        display: block;
+    }
+
+    .creations-mobile{
+        display: none;
+    }
+
+    @media(max-width: 900px){
+        .creations-desktop{
+            display: none;
+        }
+
+        .creations-mobile{
+            display: block;
+        }
+    }
 `;

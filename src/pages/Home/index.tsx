@@ -2,11 +2,16 @@ import React from 'react'
 import Header from '../../components/Header'
 import Presentation from '../../components/Presentation'
 import Creations from '../../components/Creations'
+import CreationsMobile from '../../components/CreationsMobile'
 import Footer from '../../components/Footer'
+
+import {
+    Container,
+} from './styles'
 
 const Home:React.FC = () => {
     return (
-        <>
+        <Container>
             <section>
                 <Header />
             </section>
@@ -16,13 +21,18 @@ const Home:React.FC = () => {
             </section>
 
             <section>
-                <Creations />
+                <div className="creations-desktop">
+                    <Creations />
+                </div>
+                <div className="creations-mobile">
+                    <CreationsMobile />
+                </div>
             </section>
 
             <section>
                 <Footer />
             </section>
-        </>
+        </Container>
     )
 }
 
