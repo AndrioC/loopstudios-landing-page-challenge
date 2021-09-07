@@ -3,6 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.footer`
     width: 100%;
     background: #000;
+
+    @media(max-width: 900px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -10,14 +16,34 @@ export const Wrapper = styled.div`
     height: 168px;
     justify-content: space-between;
     align-items: center;
+
+    @media(max-width: 900px){
+        height: 470px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 57px;
+    }
 `;
 
 export const Header = styled.div`
     display: flex;
+
+    @media(max-width: 900px){
+        margin-top: 57px;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
 `;
 
 export const ImgLogo = styled.img`
     margin-left: 165px;
+
+    @media(max-width: 900px){
+        margin-left: 0;
+    }
 `;
 
 export const SocialNetworks = styled.div`
@@ -49,13 +75,25 @@ export const SocialNetworks = styled.div`
             height: 24px;
         }
     }
+
+    @media(max-width: 900px){
+        margin-left: 0;
+    }
 `;
 
 
 export const FooterWrapper = styled.div`
     display: flex;
-    flex-direction: column;
     margin-right: 165px;
+    flex-direction: column;
+
+    @media(max-width: 900px){
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: center;
+    }
 `;
 
 
@@ -70,6 +108,10 @@ export const RightsInfo = styled.div`
         color: var(--white);
         opacity: 0.5;
         margin-top: 12px;
+    }
+
+    @media(max-width: 900px){
+        margin-right: 0;
     }
 `;
 

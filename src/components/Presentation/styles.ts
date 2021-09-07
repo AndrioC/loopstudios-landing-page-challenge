@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         margin-bottom: 96px;
+        width: 100%;
 
         img {
             width: 450px;
@@ -31,7 +32,6 @@ export const Wrapper = styled.div`
 
 
 export const Info = styled.div`
-    width: 558px;
     height: 318px;
     background: var(--white);
     margin-left: -159px;

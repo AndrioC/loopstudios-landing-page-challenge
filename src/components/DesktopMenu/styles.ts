@@ -22,12 +22,14 @@ export const NavBar = styled.div<Props>`
             font-weight: normal;
             font-size: 15px;
             color: var(--white);
+                margin-top: 0;
 
             li {
                 position: relative;
                 cursor: pointer;
                 & + li {
                     margin-left: 33px;
+                    margin-top:0;
                 }
                 transition: opacity .3s;
 
@@ -38,11 +40,45 @@ export const NavBar = styled.div<Props>`
                         width: 24px;
                         height: 2px;
                         top: 30px;
-                        left: calc(50% - 12px);
                         align-items: center;
                         background: var(--white);
                     }
                     opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 900px){
+    left: 0px;
+    right: 0px;
+        nav {
+            ul {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 33px;
+
+                li {
+                    position: relative;
+                    cursor: pointer;
+                    & + li {
+                        margin-left: 0;
+                        margin-top: 30px;
+                    }
+                    transition: opacity .3s;
+
+                    &:hover{
+                        ::before{
+                            content: "";
+                            position: absolute;
+                            width: 24px;
+                            height: 2px;
+                            top: 30px;
+                            align-items: center;
+                            background: var(--white);
+                        }
+                        opacity: 0.7;
+                    }
                 }
             }
         }

@@ -38,4 +38,10 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar {
         width: 0px;
     }
+
+    @media (max-width: 960px) {
+    body {
+       overflow-x: hidden;
+    }
+}
 `;
