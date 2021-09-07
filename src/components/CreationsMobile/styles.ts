@@ -92,7 +92,7 @@ export const WrapperContainer = styled.div`
     span {
         position: absolute;
         left: 21px;
-        top: 60px;
+        top: 48px;
         font-size: 30px;
         font-family: "Josefin Sans";
         text-transform: uppercase;
