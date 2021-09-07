@@ -15,6 +15,17 @@ export const Wrapper = styled.div`
     margin-top: 160px;
     margin-bottom: 180px;
     width: 1114px;
+
+    @media(max-width: 900px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 450px;
+        }
+    }
 `;
 
 
@@ -49,6 +60,24 @@ export const Info = styled.div`
         width: 445px;
         margin-left: 96px;
         line-height: 27px;
+    }
+
+    @media(max-width: 900px){
+        margin-top: 48px;
+        margin-left: 0;
+        display: flex;
+
+        h1 {
+            font-size: 33px;
+            margin-left: 0px;
+            width: 279px;
+        }
+
+        p {
+            margin-left: 0;
+            width: 279px;
+            text-align: center;
+        }
     }
 
 `;
