@@ -6,7 +6,7 @@ export const Container = styled.header`
     height: 650px;
     background: url(${backgroundHero}) no-repeat;
     background-position: center 0%;
-    background-size: 100%;
+    background-size: cover;
     .mobile-menu{
         display: none;
     }
@@ -25,6 +25,11 @@ export const Container = styled.header`
 export const ImgLogo = styled.img`
     margin-top: 66px;
     margin-left: 165px;
+
+    @media(max-width: 900px){
+        margin-top: 66px;
+        margin-left: 24px;    
+    }
 `;
 
 export const NavBar = styled.div`
@@ -80,5 +85,18 @@ export const DescriptionInfo = styled.div`
         font-size: 72px;
         text-transform: uppercase;
         padding: 40px 20px 20px 30px;
+    }
+
+    @media(max-width: 900px){
+        position: absolute;
+        width: 333px;
+        height: 198px;
+        margin-left: 24px;
+
+        h1{
+            font-size: 40px;
+            width: 279px;
+            padding: 20px 20px 20px 30px;
+        }
     }
 `;
