@@ -12,7 +12,7 @@ export const Container = styled.header`
     }
 
     .desktop-menu{
-        display: none;
+        display: block;
     }
 
     @media(max-width: 900px){
